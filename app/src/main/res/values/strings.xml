@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">New Chat</string>
+
+    <!-- ChatActivity -->
+    <string name="btn_recorder_normal">按住 说话</string>
+    <string name="btn_recorder_recording">松开 结束</string>
+    <string name="btn_recorder_cancel">松开手指，取消发送</string>
+
+    <string name="dialog_audio_cancel">手指上滑，取消发送</string>
+    <string name="dialog_audio_too_short">录音时间过短</string>
+
+    <!-- DialogSelctUsers -->
+    <string name="dialog_select_users_hint">点击输入用户名</string>
+</resources>

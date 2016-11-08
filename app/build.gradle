@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'android-apt'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.0.0'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.2.1'
+    }
+}
+greendao {
+    schemaVersion 2
+    daoPackage 'com.lodestreams.chat.greendao.gen'
+    targetGenDir 'src/main/java'
+}
+
+android {
+    compileSdkVersion Integer.parseInt(project.COMPILE_SDK_VERSION)
+    buildToolsVersion project.BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId "com.lodestreams.chat"
+        minSdkVersion project.MIN_SDK_VERSION
+        targetSdkVersion project.TARGET_SDK_VERSION
+        versionCode 1
+        versionName "${VERSION_NAME}"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'org.greenrobot:greendao:3.0.1'
+    compile 'org.greenrobot:greendao-generator:3.0.0'
+    compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    compile 'com.orhanobut:logger:1.15'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'io.socket:socket.io-client:0.7.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'joda-time:joda-time:2.9.4'
+    compile 'com.amazonaws:aws-android-sdk-s3:2.3.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'me.relex:photodraweeview:1.1.0'
+    compile 'com.tencent.bugly:crashreport:2.2.0.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+}

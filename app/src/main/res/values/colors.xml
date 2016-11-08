@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">@android:color/white</color>
+    <color name="gray">#bfbfbf</color>
+
+    <color name="btn_recorder_bg_normal">#ffffff</color>
+    <color name="btn_recorder_border_normal">#9b9b9b</color>
+    <color name="btn_recorder_bg_recording">#eeeeee</color>
+    <color name="btn_recorder_border_recording">#eeeeee</color>
+    <color name="btn_recorder_text">#9b9b9b</color>
+    <color name="recorder_dialog_text">#55D56F55</color>
+
+    <color name="chat_clorAccent">#6DC267</color>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/bt_audio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/chat_icon_audio_n" />
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/bt_arrow"
+            android:layout_toRightOf="@id/bt_audio" />
+
+        <Button
+            android:id="@+id/bt_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/llyt_more"
+            android:clickable="false"
+            android:background="@drawable/chat_icon_arrow_n" />
+
+        <LinearLayout
+            android:id="@+id/llyt_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp">
+            <Button
+                android:id="@+id/bt_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_chat_send"
+                android:button="@null"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/bt_more_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_chat_more"
+                android:button="@null"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_audio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/bt_keyboard"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_chat_keyboard" />
+
+        <com.lodestreams.chat.view.AudioRecorderButton
+            android:id="@+id/bt_press_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/bt_more_audio"
+            android:layout_toRightOf="@id/bt_keyboard"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:minHeight="0dp"
+            android:textColor="@color/btn_recorder_text"
+            android:background="@drawable/shape_btn_recorder_normal"
+            android:text="@string/btn_recorder_normal"/>
+
+        <Button
+            android:id="@+id/bt_more_audio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_chat_more"
+            android:button="@null"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlyt_more"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/llyt_more_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/chat_icon_image"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="图 片"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

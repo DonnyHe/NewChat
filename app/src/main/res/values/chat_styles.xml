@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="chat_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="chat_item_image">
+        <item name="actualImageScaleType">focusCrop</item>
+        <item name="progressBarImage">@drawable/loading</item>
+        <item name="progressBarAutoRotateInterval">1000</item>
+        <item name="progressBarImageScaleType">centerInside</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="chat_item_audio">
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlyt_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lodestreams.chat.activity.ChatActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_below="@id/barLayout"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:scrollbars="vertical"
+            android:paddingTop="10dp"
+            android:scrollbarStyle="outsideOverlay"/>
+
+        <com.lodestreams.chat.view.ChatKeyboard
+            android:id="@+id/chat_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/flyt_shoot"
+        android:layout_below="@id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.lodestreams.chat.view.Arrow
+            android:id="@+id/arrow_receive"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <com.lodestreams.chat.view.Arrow
+            android:id="@+id/arrow"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <com.lodestreams.chat.view.Target
+            android:id="@+id/target"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_height="50dp"/>
+    </FrameLayout>
+
+</RelativeLayout>
