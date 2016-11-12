@@ -5,11 +5,11 @@
 当对方的滚动滑轮被射中时，会自动发送其在文本框输入的文字。
 服务端暂时放在朋友的服务器上。
 #发送语音
-![image](https://github.com/DonnyHe/NewChat/tree/master/screenshot/voice.png)
+![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/voice.png)
 #发送图片
-![image](https://github.com/DonnyHe/NewChat/tree/master/screenshot/picture.png)
+![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/picture.png)
 #射箭
-![image](https://github.com/DonnyHe/NewChat/tree/master/screenshot/shoot.gif)
+![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/shoot.gif)
 #被对方射中
-![image](https://github.com/DonnyHe/NewChat/tree/master/screenshot/receive_shoot.gif)
+![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/receive_shoot.gif)
 
