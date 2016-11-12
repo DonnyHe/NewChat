@@ -12,7 +12,7 @@
 
 ## ps:服务器只简单实现转发，并未实现消息存储。故聊天双方都需在线才可交互
 
-## 发送语音
+## 发送语音（请无视头像，随便找了几张）
 ![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/voice.png)
 ## 发送图片
 ![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/picture.png)
