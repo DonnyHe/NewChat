@@ -20,5 +20,7 @@
 ![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/shoot.gif)
 ## 被对方射中
 ![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/receive_shoot.gif)
+## 扫描下载apk
+![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/scan_download.png)
 
 socket.io地址：https://github.com/socketio/socket.io
