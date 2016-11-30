@@ -20,7 +20,6 @@
 ![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/shoot.gif)
 ## 被对方射中（被对方的箭射中滚动的圆圈时，会自动发送文本框中的信息，射中的操作根据属性动画的值和自身尺寸虚拟为矩形，进行矩形相交检测）
 ![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/receive_shoot.gif)
-## 扫描下载apk
-![image](https://github.com/DonnyHe/NewChat/raw/master/screenshot/scan_download.png)
+
 
 socket.io地址：https://github.com/socketio/socket.io
